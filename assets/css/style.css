@@ -1,0 +1,36 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../images/bourbon-on-the-rocks.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tryopi {
+  background-color: rgb(207, 194, 194);
+  opacity: 0.8;
+  max-width: 960px;
+  margin: auto;
+  border-radius: 0px 0px 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 14px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.container {
+  opacity: 0.7;
+}
