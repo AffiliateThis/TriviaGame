@@ -34,3 +34,9 @@ html {
 .container {
   opacity: 0.7;
 }
+
+/* timer */
+
+.timer {
+  font-weight: 30px;
+}
