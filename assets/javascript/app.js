@@ -5,6 +5,7 @@ var correct = 0;
 var wrong = 0;
 var questionNumber;
 var interval;
+var questionAmount = 0;
 // var questions = [q1, q2];
 // start the game function
 
@@ -91,7 +92,27 @@ $(document).ready(function() {
     $("#answer4radio").val(0);
   }
 
-  function next() {}
+  function q2() {
+    loadQuestions();
+    $("#questionLine").text(
+      "In order to be considered bourbon, where does bourbon need to be distilled?"
+    );
+    $("#answer1text").html("Kentucky");
+    $("#answer1radio").val(1);
+    $("#answer2text").html("Tenessee");
+    $("#answer2radio").val(1);
+    $("#answer3text").html("Virginia");
+    $("#answer3radio").val(1);
+    $("#answer4text").html(
+      "It does not matter, as long other parameters are met"
+    );
+    $("#answer4radio").val(0);
+  }
+
+  function nextQuestion() {
+    getBubblevalue();
+    questionAmount = questionAmount + 1;
+  }
 
   function status() {
     getBubblevalue();
