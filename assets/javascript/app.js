@@ -1,9 +1,9 @@
 // setup variables here
 
 var timeLeft = 60;
-var correct = 0;
+var correctA = 0;
 var wrong = 0;
-var questionNumber;
+var questionNumber = 1;
 var interval;
 var questionAmount = 0;
 // var questions = [q1, q2];
@@ -21,16 +21,16 @@ $(document).ready(function() {
     //   wrong = 0;
     //   questionAmount = 0;
 
-    $("#correct").text(correct);
+    $("#correct").text(correctA);
     $("#wrong").text(wrong);
     // $("#");
   });
 
   function loadQuestions() {
     $("#questions").html(
-      "<br>" +
+      "<br><br>" +
         "<div class='col col-xs-12 col-lg-12'>" +
-        "<h3 id='questionLine'></h3>" +
+        "<h2 id='questionLine'></h2>" +
         "<label>" +
         "<input type='radio' name='choice' value='1' id='answer1radio'> <span id='answer1text'></span> " +
         "</label><br>" +
@@ -66,6 +66,8 @@ $(document).ready(function() {
 
   // });
 
+  // array of objects  with functions
+
   // function buildQuiz() {}
 
   // function showResults() {}
@@ -94,9 +96,8 @@ $(document).ready(function() {
 
   function q2() {
     loadQuestions();
-    $("#questionLine").text(
-      "In order to be considered bourbon, where does bourbon need to be distilled?"
-    );
+    $("#questionLine").text("Test?");
+
     $("#answer1text").html("Kentucky");
     $("#answer1radio").val(1);
     $("#answer2text").html("Tenessee");
@@ -110,7 +111,13 @@ $(document).ready(function() {
   }
 
   function nextQuestion() {
-    getBubblevalue();
+    $("#next").onclick(next);
+    for (var i = 0; i < 10; i++)
+    if 
+
+  getBubblevalue()  {
+    console.log(something);
+
     questionAmount = questionAmount + 1;
   }
 
@@ -125,5 +132,20 @@ $(document).ready(function() {
     }
   }
 
-  function getBubblevalue() {}
+  function score() {
+    for (var i = 0; i < 4; i++); {}
+  
+
+  function correct() {
+    correct = correctA + 1;
+  }
+
+  function inCorrect() {
+    inCorrect = wrong + 1;
+  }
+  }
+
+  //    wrong answers = wrong answers + 1
+  //    correct answers = correct answers +1
+  // }
 });
